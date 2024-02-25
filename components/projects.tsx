@@ -1,43 +1,20 @@
 import React from "react";
-import Image from "next/image";
+
+import Image, { StaticImageData } from "next/image";
+
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 
-export default function Projects() {
-  return (
-    <section>
-      <SectionHeading>My Projects</SectionHeading>
-      <div>
-        {projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-type ProjectProps = {
+type projectType = {
   title: string;
   description: string;
   tags: string[];
   imageUrl: string;
 };
 
-function Project({
-  title,
-  description,
-  tags,
-  imageUrl,
-}: {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: string;
-}) {
+function Project({ title, description, tags, imageUrl }: projectType) {
   return (
-    <section className="group bg-slate-100 max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] mb-3 sm:mb-10 last:mb-0 even:pl-8 hover:bg-gray-200 transition ">
+    <section className="group bg-slate-100 max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] mb-3 sm:mb-10 last:mb-0 even:pl-8 hover:bg-slate-200 transition ">
       <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem] ">
         <h3 className="text-2xl pb-1 font-semibold">{title}</h3>
         <p className="mt-2 leading-relaxed text-[0.9rem] text-slate-700 ">
@@ -61,6 +38,26 @@ function Project({
         quality={100}
         className="absolute top-8 -right-[23.5rem] w-[56.25rem] rounded-t-md shadow-2xl group-even:right[initial] group-even:-left-[23.5rem]"
       />
+    </section>
+  );
+}
+
+export default function Projects() {
+  return (
+    <section>
+      <SectionHeading>My Projects</SectionHeading>
+      <div>
+        {projectsData.map((project: any, index) => (
+          <React.Fragment key={index}>
+            <Project
+              title={project.title}
+              description={project.description}
+              tags={project.tags}
+              imageUrl={project.imageUrl}
+            />
+          </React.Fragment>
+        ))}
+      </div>
     </section>
   );
 }

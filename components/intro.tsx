@@ -13,7 +13,7 @@ import { useActiveSecContext } from "@/context/active-sec-context";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Intro() {
-  const { ref } = useSectionInView({ sectionName: "Home" });
+  const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.4 });
 
   return (
     <section

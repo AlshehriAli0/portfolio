@@ -12,7 +12,7 @@ import AboutPc from "./about-pc";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView({ sectionName: "About" });
+  const { ref } = useSectionInView({ sectionName: "About", threshold: 0.4 });
 
   return (
     <>

@@ -6,11 +6,15 @@ import { SectionName } from "./types";
 
 type useSectionInViewType = {
   sectionName: SectionName;
+  threshold: number;
 };
 
-export function useSectionInView({ sectionName }: useSectionInViewType) {
+export function useSectionInView({
+  sectionName,
+  threshold,
+}: useSectionInViewType) {
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold,
   });
   const { setActiveSec, lastClick } = useActiveSecContext();
 

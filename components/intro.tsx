@@ -51,24 +51,25 @@ export default function Intro() {
               Download Resume{" "}
               <HiDownload className="opacity-70 group-hover:translate-y-1  transition" />
             </a>
+            <div className="flex gap-4 p-x-1">
+              <a
+                className="bg-white p-4 text-slate-700 px-[1.1405rem] rounded-full flex items-center gap-2  focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+                href="https://www.linkedin.com/in/ali-alshehri-340b26284"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <BsLinkedin />
+              </a>
 
-            <a
-              className="bg-white p-4 text-slate-700 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
-              href="https://www.linkedin.com/in/ali-alshehri-340b26284"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsLinkedin />
-            </a>
-
-            <a
-              className="bg-white p-4 text-slate-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
-              href="https://github.com/AlshehriAli0"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithubSquare />
-            </a>
+              <a
+                className="bg-white p-4 text-slate-700 flex items-center gap-2 rounded-full text-[1.35rem] focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+                href="https://github.com/AlshehriAli0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithubSquare />
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

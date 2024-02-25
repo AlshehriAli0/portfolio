@@ -61,7 +61,7 @@ export const projectsData = [
   },
   ,
   {
-    title: "premium properties",
+    title: "Premium Properties",
     description:
       "Created a mock real-estate website to practice front-end development and UI design skills. Utilized Tailwind CSS for a sleek, modern, and functional design.",
     tags: ["HTML", "CSS", "JavaScript", "Tailwind"],

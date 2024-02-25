@@ -1,6 +1,8 @@
 import "./globals.css";
-import Header from "@/components/header";
 import { Inter } from "next/font/google";
+
+import Header from "@/components/header";
+import ActiveSecContextProvider from "@/context/active-sec-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <link rel="icon" href="/Aimg-white.png" />
       <body
         className={`bg-slate-50 text-slate-950 h-[5000px] relative pt-28 sm:pt-36 ${inter.className}`}
@@ -27,9 +29,10 @@ export default function RootLayout({
 
         <div className="bg-[#d4dbff] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-27.5rem] xl:left-[-15rem] 2xl:left-[-10rem] "></div>
 
-        <Header />
-
-        {children}
+        <ActiveSecContextProvider>
+          <Header />
+          {children}
+        </ActiveSecContextProvider>
       </body>
     </html>
   );

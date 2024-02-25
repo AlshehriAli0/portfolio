@@ -1,11 +1,21 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+
+import React, { useState, useContext } from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 
+import clsx from "clsx";
+import { motion } from "framer-motion";
+import { links } from "@/lib/data";
+import {
+  ActiveSecContext,
+  useActiveSecContext,
+} from "@/context/active-sec-context";
+
 export default function Header() {
+  const { activeSec, setActiveSec, setLastClick } = useActiveSecContext();
+
   return (
     <header className=" z-[999] relative ">
       <motion.div
@@ -17,17 +27,34 @@ export default function Header() {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-slate-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center"
+              className="h-3/4 relative flex items-center justify-center"
               key={link.hash}
               initial={{ opacity: 0, y: -100 }}
               animate={{ opacity: 1, y: 0 }}
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition"
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition  -mt-[0.2rem]",
+                  { "text-slate-950 ": activeSec === link.name }
+                )}
                 href={link.hash}
+                onClick={() => {
+                  setActiveSec(link.name);
+                  setLastClick(Date.now());
+                }}
               >
-                {" "}
                 {link.name}
+                {link.name === activeSec && (
+                  <motion.span
+                    className=" bg-slate-200/60 inset-0 -z-10 rounded-2xl absolute -mt-[0.2rem] "
+                    layoutId="activeSec"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}

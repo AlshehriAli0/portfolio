@@ -13,7 +13,6 @@ export default function Home() {
       <Divider />
       <About />
       <Divider />
-
       <Projects />
     </main>
   );

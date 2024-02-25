@@ -26,7 +26,7 @@ export default function Project({
   });
 
   const scaleProg = useTransform(scrollYProgress, [0, 1], [0.75, 1]);
-  const opacityProg = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const opacityProg = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
     <motion.div
@@ -34,7 +34,7 @@ export default function Project({
       ref={ref}
       style={{ scale: scaleProg, opacity: opacityProg }}
     >
-      <section className=" bg-slate-100 rounded-md max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] mb-3 group-even:sm:pl-8 hover:bg-slate-200 transition ">
+      <section className=" bg-slate-100 rounded-md max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[19rem] mb-3 group-even:sm:pl-8 hover:bg-slate-200 transition ">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:sm:ml-[18rem] ">
           <h3 className="text-2xl pb-1 font-semibold transition transform duration-[8000] group-hover:font-extrabold  ">
             {title}

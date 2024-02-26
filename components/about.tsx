@@ -1,11 +1,9 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
-import { useActiveSecContext } from "@/context/active-sec-context";
 import SectionHeading from "./section-heading";
 import AboutMobile from "./about-mobile";
 import AboutPc from "./about-pc";
@@ -18,17 +16,17 @@ export default function About() {
     <>
       <motion.section
         ref={ref}
-        className=" max-w-[40rem] text-center leading-8 scroll-mt-36 "
+        className=" max-w-[40rem] text-center leading-8 scroll-mt-36"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.215 }}
         id="about"
       >
         <SectionHeading>About Me</SectionHeading>
-        <span className="sm:hidden block">
+        <span className="sm:hidden block glass-bg rounded-lg p-4">
           <AboutMobile />
         </span>
-        <span className="hidden sm:block">
+        <span className="hidden sm:block glass-bg rounded-lg p-4">
           <AboutPc></AboutPc>
         </span>
       </motion.section>

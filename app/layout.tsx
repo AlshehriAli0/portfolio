@@ -29,6 +29,13 @@ export default function RootLayout({
 
         <div className="bg-[#d4dbff] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-27.5rem] xl:left-[-15rem] 2xl:left-[-10rem] "></div>
 
+        <div
+          className="bg-[#AFEEEE] absolute top-[40rem] -z-10 right-[-26rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem]
+         sm:w-[68.75rem] "
+        ></div>
+
+        <div className="bg-[#FFDAB9] absolute top-[50rem] md:top-[60rem] -z-10 left-[-35rem] md:left-[-20rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] "></div>
+
         <ActiveSecContextProvider>
           <Header />
           {children}

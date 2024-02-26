@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.glass-bg {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 20px 20px 59px #ededed,
+        -20px -20px 59px rgba(255, 255, 255, 0.8);
+    
+}

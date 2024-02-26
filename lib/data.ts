@@ -1,5 +1,7 @@
 import React from "react";
 
+import { FaGraduationCap } from "react-icons/fa6";
+
 import mindboard from "/public/mindboard.png";
 import analasis from "@/public/tech-data.png";
 import todo from "@/public/todo.png";
@@ -34,6 +36,14 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Bachelor of Computer Science",
+    location: "Khobar, Eastern Province, KSA",
+    description:
+      "Started my university academic journey in 2022 as a Computer Science and IT student, currently undergoing studies for a Bachelor of Computer Science degree. Engaged in diverse coursework and practical experiences, including programming, database management, and information systems. Actively participated in collaborative projects, hackathons, and extracurricular activities and honing technical skills.",
+    icon: React.createElement(FaGraduationCap),
+    date: "2022",
+  },
   
 ] as const;
 
@@ -101,5 +111,4 @@ export const skillsData = [
   "PostgreSQL",
   "Django",
   "Framer Motion",
-
 ] as const;

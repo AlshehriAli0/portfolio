@@ -23,10 +23,10 @@ export default function About() {
         id="about"
       >
         <SectionHeading>About Me</SectionHeading>
-        <span className="sm:hidden block glass-bg rounded-lg p-4">
+        <span className="sm:hidden block glass-bg rounded-lg p-4 transition-all">
           <AboutMobile />
         </span>
-        <span className="hidden sm:block glass-bg rounded-lg p-4">
+        <span className="hidden sm:block glass-bg rounded-lg p-4 transition-all">
           <AboutPc></AboutPc>
         </span>
       </motion.section>

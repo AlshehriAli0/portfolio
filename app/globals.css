@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 .glass-bg {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.7);
     box-shadow: 20px 20px 59px #ededed,
         -20px -20px 59px rgba(255, 255, 255, 0.8);
-    
+
+}
+
+.dark .glass-bg {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: none
+}
+
+html.dark {
+    --line-color: rgb(44, 54, 73);
+}
+
+html {
+    --line-color: rgb(226 232 240);
+
 }

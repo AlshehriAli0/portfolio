@@ -25,7 +25,7 @@ export default function Project({
     offset: ["0 1", "1.33 1"],
   });
 
-  const scaleProg = useTransform(scrollYProgress, [0, 1], [0.75, 1]);
+  const scaleProg = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   const opacityProg = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
@@ -34,19 +34,19 @@ export default function Project({
       ref={ref}
       style={{ scale: scaleProg, opacity: opacityProg }}
     >
-      <section className=" bg-slate-100 rounded-md max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[19rem] mb-3 group-even:sm:pl-8 hover:bg-slate-200 transition ">
+      <section className=" bg-slate-100 rounded-md max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[19rem] mb-3 group-even:sm:pl-8 hover:bg-slate-200 transition dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:sm:ml-[18rem] ">
-          <h3 className="text-2xl pb-1 font-semibold transition transform duration-[8000] group-hover:font-extrabold  ">
+          <h3 className="text-2xl pb-1 font-semibold transition transform duration-[8000] group-hover:font-extrabold ">
             {title}
           </h3>
-          <p className="mt-2 leading-relaxed text-[0.9rem] text-slate-700 group-hover:text-slate-900 ">
+          <p className="mt-2 leading-relaxed text-[0.9rem] text-slate-700 dark:text-white/60 group-hover:text-slate-900 dark:group-hover:text-white transition-all ">
             {description}
           </p>
 
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto ">
             {tags.map((tags, index) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:bg-white/[0.08] dark:text-white/80  dark:group-hover:text-white transition-all"
                 key={index}
               >
                 {tags}

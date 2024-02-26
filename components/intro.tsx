@@ -3,18 +3,17 @@
 import React, { useEffect } from "react";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useInView } from "react-intersection-observer";
-import { useActiveSecContext } from "@/context/active-sec-context";
+
 import { useSectionInView } from "@/lib/hooks";
+import ScrambleText from "./scramble-text";
 
 export default function Intro() {
   const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.4 });
-
+  const words : string[] = ["JavaScript", "Python", "TypeScript", "C++"] as const;
   return (
     <section
       className=" sm:mt-10 max-w-[50rem] text-center scroll-mt-[100rem]"
@@ -28,15 +27,16 @@ export default function Intro() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="font-bold">Hello, I&apos;m Ali.</span> {} I&apos;m
-            a <span className="font-bold">full-stack developer</span>.
-            Specializing in{" "}
-            <span className="font-bold">back-end development </span> with
-            <span className="font-bold"> interest</span> in{" "}
-            <span className="italic"> AI and ML</span>. My expertise lies in{" "}
-            <span className="underline">Python</span>,{" "}
-            <span className="underline">TypeScript</span> &nbsp; and&nbsp;{" "}
-            <span className="underline"> JavaScript</span>.{" "}
+            <span className="font-bold">Hello, I&apos;m Ali Alshehri.</span> {}{" "}
+            A <span className="font-bold">Full-Stack Developer</span>,
+            specializing in{" "}
+            <span className="font-bold">Back-End Development</span> with a
+            strong focus on
+            <span className="font-bold"> AI and ML</span>. 
+            Skilled with{" "}
+            <span className="font-bold">
+              <ScrambleText words={words} />
+            </span>
           </motion.h1>
 
           <motion.div

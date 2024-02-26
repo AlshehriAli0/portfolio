@@ -8,6 +8,7 @@ import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
+import Link from "next/link";
 
 export default function Projects() {
   const { ref } = useSectionInView({ sectionName: "Projects", threshold: 0.2} );
@@ -23,10 +24,12 @@ export default function Projects() {
               description={project.description}
               tags={project.tags}
               imageUrl={project.imageUrl}
+              url={project.url}
             />
           </React.Fragment>
         ))}
       </div>
+      <p className="text-xs text-slate-500 text-center mt-6">More projects can be found on my github profile: <Link className="underline font-semibold" href={"https://github.com/AlshehriAli0"}>AlshehriAli0</Link></p>
     </section>
   );
 }

@@ -7,6 +7,7 @@ import analasis from "@/public/tech-data.png";
 import todo from "@/public/todo.png";
 import premiumprops from "@/public/premium-props.png";
 import pyApp from "@/public/pyBAnk.png";
+import { url } from "inspector";
 
 export const links = [
   {
@@ -54,6 +55,7 @@ export const projectsData = [
       "A user-friendly web app for seamless thought organization with features like note creation, sorting and account management, all in one place. ",
     tags: ["React", "Express.js", "MongoDB", "Tailwind", "Heroku"],
     imageUrl: mindboard,
+    url: "https://www.mindboard.live/",
   },
   {
     title: "Tech Jobs Analysis ",
@@ -61,6 +63,7 @@ export const projectsData = [
       "A Python program to analyze tech-related job postings on LinkedIn in KSA during Q1-Q2 2023.  The program identifies the most posted job titles and their percentages.",
     tags: ["Python", "matplotlib", "pandas"],
     imageUrl: analasis,
+    url: "https://github.com/AlshehriAli0/Tech-Job-Analysis",
   },
   {
     title: "To-Do Web App",
@@ -68,6 +71,7 @@ export const projectsData = [
       "A Web App project that offers seamless task management with session-based authentication. Leveraging Bootstrap, EJS, and MongoDB, giving a responsive design and data persistence.",
     tags: ["EJS", "CSS", "SASS", "MongoDB", "jQuery", "JavaScript"],
     imageUrl: todo,
+    url: "https://www.todowebapp.com/",
   },
   ,
   {
@@ -76,6 +80,7 @@ export const projectsData = [
       "Created a mock real-estate website to practice front-end development and UI design skills. Utilized Tailwind CSS for a sleek, modern, and functional design.",
     tags: ["HTML", "CSS", "JavaScript", "Tailwind"],
     imageUrl: premiumprops,
+    url: "https://alshehriali0.github.io/Tailwind-RealEstate-Website/",
   },
   {
     title: "GUI Banking App",
@@ -83,6 +88,7 @@ export const projectsData = [
       "Developed a Python banking app for COMP123 course group project. Utilized Tkinter for GUI. Features: User registration/login, account details, withdrawals/deposits, responsive UI.",
     tags: ["Python", "Tkinter", "Pillow"],
     imageUrl: pyApp,
+    url: "https://github.com/AlshehriAli0/Python-Banking-App",
   },
 ] as const;
 

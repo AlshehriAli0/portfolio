@@ -1,15 +1,17 @@
 "use client";
 
 import React, { useRef } from "react";
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import { useScroll, motion, useTransform } from "framer-motion";
+import Link from "next/link";
 
 type projectType = {
   title: string;
   description: string;
   tags: string[];
   imageUrl: string;
+  url: string;
 };
 
 export default function Project({
@@ -17,6 +19,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  url,
 }: projectType) {
   // * Framer motion card animation config
   const ref = useRef<HTMLDivElement>(null);
@@ -35,11 +38,19 @@ export default function Project({
       style={{ scale: scaleProg, opacity: opacityProg }}
     >
       <section className=" bg-slate-100 rounded-md max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[19rem] mb-3 group-even:sm:pl-8 hover:bg-slate-200 transition dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:sm:ml-[18rem] ">
-          <h3 className="text-2xl pb-1 font-semibold transition transform duration-[8000] group-hover:font-extrabold ">
-            {title}
-          </h3>
-          <p className="mt-2 leading-relaxed text-[0.9rem] text-slate-700 dark:text-white/60 group-hover:text-slate-900 dark:group-hover:text-white transition-all ">
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-3 sm:pt-10 sm:max-w-[55%] flex flex-col h-full group-even:sm:ml-[18rem] ">
+          <Link
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" flex gap-3 justify-start items-center cursor-pointer"
+          >
+            <h3 className="text-2xl flex justify-left items-center gap-3 pb-1 font-semibold transition transform duration-[8000] group-hover:font-extrabold ">
+              {title}
+            </h3>
+            <FaExternalLinkAlt className="mb-1" />
+          </Link>
+          <p className="mt-2 leading-relaxed text-[0.9rem] text-slate-700 dark:text-white/60 group-hover:text-slate-900 dark:group-hover:text-white  transition-all ">
             {description}
           </p>
 

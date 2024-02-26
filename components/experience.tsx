@@ -18,7 +18,7 @@ export default function Experience() {
     sectionName: "Experience",
     threshold: 0.5,
   });
-  const {theme, toggleTheme} = useThemeContext();
+  const {theme} = useThemeContext();
 
 
   return (

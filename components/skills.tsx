@@ -9,10 +9,10 @@ import {
   FaReact,
   FaNodeJs,
   FaGit,
-  FaDatabase,
+  FaSass ,
   FaPython,
-  FaCaretRight,
 } from "react-icons/fa";
+
 import {
   SiTypescript,
   SiNextdotjs,
@@ -26,6 +26,7 @@ import {
   SiFlask,
   SiJquery,
   SiPostman,
+  SiMongodb,
 } from "react-icons/si";
 
 import { TbBrandCpp, TbBrandFramerMotion } from "react-icons/tb";
@@ -35,7 +36,7 @@ import { LuFileJson } from "react-icons/lu";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const skillIcons: any = {
   HTML: <FaHtml5 />,
@@ -49,7 +50,7 @@ const skillIcons: any = {
   "Node.js": <FaNodeJs />,
   Git: <FaGit />,
   Tailwind: <SiTailwindcss />,
-  MongoDB: <FaDatabase />,
+  MongoDB: <SiMongodb />,
   Heroku: <SiHeroku />,
   EJS: <LuFileJson />,
   Flask: <SiFlask />,
@@ -57,6 +58,7 @@ const skillIcons: any = {
   Postman: <SiPostman />,
   Docker: <SiDocker />,
   bootstrap: <SiBootstrap />,
+  "SASS": <FaSass />,
   "Express.js": <SiExpress />,
   PostgreSQL: <SiPostgresql />,
   Django: <SiDjango />,
@@ -68,10 +70,13 @@ const fadeInVarient = {
     opacity: 0,
     y: 100,
   },
-  animate: {
+  animate: (index: number) => ({
     opacity: 1,
     y: 0,
-  },
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
 };
 
 export default function Skills() {
@@ -91,10 +96,9 @@ export default function Skills() {
             key={index}
             variants={fadeInVarient}
             initial="initial"
-            animate="animate"
             whileInView="animate"
-            
             viewport={{ once: true }}
+            custom={index}
           >
             {" "}
             {skillIcons[skill] ? (

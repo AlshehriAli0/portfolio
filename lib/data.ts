@@ -56,7 +56,7 @@ export const projectsData = [
     title: "To-Do Web App",
     description:
       "A Web App project that offers seamless task management with session-based authentication. Leveraging Bootstrap, EJS, and MongoDB, giving a responsive design and data persistence.",
-    tags: ["EJS", "CSS", "SCSS", "MongoDB", "jQuery", "JavaScript"],
+    tags: ["EJS", "CSS", "SASS", "MongoDB", "jQuery", "JavaScript"],
     imageUrl: todo,
   },
   ,
@@ -97,6 +97,7 @@ export const skillsData = [
   "Docker",
   "bootstrap",
   "Express.js",
+  "SASS",
   "PostgreSQL",
   "Django",
   "Framer Motion",

@@ -93,7 +93,7 @@ const ScrambleText: React.FC<{ words: string[] }> = ({ words }) => {
           setTimeout(() => {
             counter = (counter + 1) % words.length;
             nextWord();
-          }, 800);
+          }, 500);
         });
       };
 

@@ -15,6 +15,7 @@ export default function Contact() {
     sectionName: "Contact",
     threshold: 0.5,
   });
+  const formRef = React.useRef<HTMLFormElement>(null);
 
   return (
     <motion.section
@@ -28,22 +29,27 @@ export default function Contact() {
     >
       <SectionHeading>Contact Me</SectionHeading>
 
-      <p className="text-slate-700 -mt-6">
-        Contact me directly at{" "}
+      <div className="text-slate-700 -mt-6">
+        Contact me directly at
         <Link className="underline" href="mailto:Ali0fawzish@outlook.com">
-          {" "}
           Ali0fawzish@outlook.com
-        </Link>{" "}
+        </Link>
         or through this form
-      </p>
+      </div>
 
       <form
         className="mt-10 flex flex-col "
+        ref={formRef}
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
           if (data) {
             toast.success("Message sent successfully");
+            setTimeout(() => {
+              if (formRef.current) {
+                formRef.current.reset();
+              }
+            }, 1000);
             return;
           } else if (error) {
             toast.error(error);
@@ -72,7 +78,7 @@ export default function Contact() {
           className="group flex items-center hover:bg-slate-950 dark:hover:bg-slate-700 hover:scale-105 justify-center gap-2 h-[3rem] w-[8rem] bg-slate-900 rounded-2xl text-white hover:font-bold outline-none transition-all active:scale-100"
           type="submit"
         >
-          Submit{" "}
+          Submit
           <FaPaperPlane className="opacity-70 transition-all group-hover:translate-x-[2px] group-hover:-translate-y-[2px] group-hover:opacity-100 " />
         </button>
       </form>

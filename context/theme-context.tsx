@@ -46,7 +46,7 @@ export default function ThemeContextProvider({
       setTheme("dark");
       document.documentElement.classList.add("dark");
     }
-  }, [theme]);
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
-import { useScroll, motion,m, useTransform } from "framer-motion";
+import { useScroll, motion, useTransform } from "framer-motion";
 import Link from "next/link";
 
 type projectType = {
@@ -32,7 +32,7 @@ export default function Project({
   const opacityProg = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <m.div
+    <motion.div
       className="group sm:mb-8 last:mb-0 sm:px-0 px-3 motion-safe"
       ref={ref}
       style={{ scale: scaleProg, opacity: opacityProg }}
@@ -72,6 +72,6 @@ export default function Project({
           className="hidden sm:block absolute border border-black/15 top-8 -right-[23.5rem] w-[56.25rem] rounded-t-md shadow-2xl shadow-black group-even:right[initial] group-even:-left-[23.5rem] transition group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 "
         />
       </section>
-    </m.div>
+    </motion.div>
   );
 }

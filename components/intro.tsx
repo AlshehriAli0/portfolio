@@ -23,7 +23,7 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay:2}}
         >
-          <span className="font-bold">Hello, Im Ali Alshehri.</span> A
+          <span className="font-bold">Hello, I&apos;m Ali Alshehri.</span> A
           <span className="font-bold"> Full-Stack Developer</span>, specializing
           in
           <span className="font-bold"> Back-End Development</span> with a strong

@@ -4,9 +4,8 @@ import React from "react";
 export default function AboutPc() {
   return (
     <div className="mb-3">
-     
       Currently pursuing a bachelors degree in
-      <span className="font-medium">Computer Science</span> at Imam Abdulrahman
+      <span className="font-medium"> Computer Science</span> at Imam Abdulrahman
       Bin Faisal University, my passion for software engineering drives me to
       continuously expand my knowledge through courses and hands-on projects. I
       thrive on the challenge of problem-solving, finding immense satisfaction
@@ -15,7 +14,7 @@ export default function AboutPc() {
       front-end frameworks, <span className="font-medium">MongoDB</span> and
       <span className="font-medium"> PostgreSQL</span> for databases, alongside
       proficiency in <span className="font-medium">TypeScript</span>.
-      Additionally, Im skilled and well-competent in backend development,
+      Additionally, I&apos;m skilled and well-competent in backend development,
       utilizing both <span className="font-medium">Flask</span> and
       <span className="font-medium">Express.js</span> to build robust APIs. Also
       capable of utilizing

@@ -1,8 +1,6 @@
-"use client";
 
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { LazyMotion, domAnimation } from "framer-motion";
 
 import Header from "@/components/header";
 import ActiveSecContextProvider from "@/context/active-sec-context";
@@ -48,12 +46,11 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSecContextProvider>
-            <LazyMotion features={domAnimation}>
               <Header />
               {children}
               <Theme />
               <Toaster position="top-right" />
-            </LazyMotion>
+        
           </ActiveSecContextProvider>
         </ThemeContextProvider>
       </body>

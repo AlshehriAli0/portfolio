@@ -9,7 +9,7 @@ import {
   FaReact,
   FaNodeJs,
   FaGit,
-  FaSass ,
+  FaSass,
   FaPython,
 } from "react-icons/fa";
 
@@ -36,7 +36,7 @@ import { LuFileJson } from "react-icons/lu";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { motion, m } from "framer-motion";
+import { m } from "framer-motion";
 
 const skillIcons: any = {
   HTML: <FaHtml5 />,
@@ -58,7 +58,7 @@ const skillIcons: any = {
   Postman: <SiPostman />,
   Docker: <SiDocker />,
   bootstrap: <SiBootstrap />,
-  "SASS": <FaSass />,
+  SASS: <FaSass />,
   "Express.js": <SiExpress />,
   PostgreSQL: <SiPostgresql />,
   Django: <SiDjango />,

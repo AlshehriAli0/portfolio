@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion, m } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function Divider() {
   return (

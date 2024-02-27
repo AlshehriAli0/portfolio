@@ -22,3 +22,7 @@ html {
     --line-color: rgb(226 232 240);
 
 }
+
+.motion-safe {
+    transition: all 0.3s;
+}

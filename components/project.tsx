@@ -33,7 +33,7 @@ export default function Project({
 
   return (
     <motion.div
-      className="group sm:mb-8 last:mb-0 sm:px-0 px-3"
+      className="group sm:mb-8 last:mb-0 sm:px-0 px-3 motion-safe"
       ref={ref}
       style={{ scale: scaleProg, opacity: opacityProg }}
     >

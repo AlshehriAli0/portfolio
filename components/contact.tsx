@@ -20,7 +20,7 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="w-[min(95%,38rem)] mb-24 text-center scroll-mt-[7.5rem]"
+      className="w-[min(95%,38rem)] mb-24 text-center scroll-mt-[7.5rem] motion-safe"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -67,7 +67,7 @@ export default function Contact() {
           className="h-52 p-4 my-3 dark:bg-slate-900 focus:outline-none focus:ring-[1.7px] focus:ring-black rounded-lg border dark:focus:ring-white/20 border-black/10 transition-all"
         ></textarea>
         <button
-        name="submit"
+          name="submit"
           rel="NavLinkContactSubmit"
           className="group flex items-center hover:bg-slate-950 dark:hover:bg-slate-700 hover:scale-105 justify-center gap-2 h-[3rem] w-[8rem] bg-slate-900 rounded-2xl text-white hover:font-bold outline-none transition-all active:scale-100"
           type="submit"

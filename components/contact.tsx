@@ -17,6 +17,20 @@ export default function Contact() {
   });
   const formRef = React.useRef<HTMLFormElement>(null);
 
+  const canSubmitForm = () => {
+    const submitFormString = localStorage.getItem("submitForm");
+    const submitForm = submitFormString ? JSON.parse(submitFormString) : null;
+    if (!submitForm) {
+      return true;
+    }
+    const { timestamp, tries } = submitForm;
+
+    const twoHoursPassed = Date.now() - timestamp >= 2 * 60 * 60 * 1000;
+    const lessThanTwoTries = tries < 2;
+
+    return twoHoursPassed || lessThanTwoTries;
+  };
+
   return (
     <motion.section
       ref={ref}
@@ -38,22 +52,44 @@ export default function Contact() {
       </div>
 
       <form
-        className="mt-10 flex flex-col "
+        className="mt-10 flex flex-col"
         ref={formRef}
-        action={async (formData) => {
+        onSubmit={async (event) => {
+          event.preventDefault();
+
+          const formData = new FormData(event.target as HTMLFormElement);
+
+          if (!canSubmitForm()) {
+            toast.error("You can only submit the form twice every 2 hours.");
+            return;
+          }
+
           const { data, error } = await sendEmail(formData);
 
           if (data) {
             toast.success("Message sent successfully");
+            const submitFormString = localStorage.getItem("submitForm");
+            const submitForm = submitFormString
+              ? JSON.parse(submitFormString)
+              : null;
+            const updatedSubmitForm = submitForm
+              ? {
+                  ...submitForm,
+                  timestamp: Date.now(),
+                  tries: submitForm.tries + 1,
+                }
+              : { timestamp: Date.now(), tries: 1 };
+            localStorage.setItem(
+              "submitForm",
+              JSON.stringify(updatedSubmitForm)
+            );
             setTimeout(() => {
               if (formRef.current) {
                 formRef.current.reset();
               }
             }, 1000);
-            return;
           } else if (error) {
             toast.error(error);
-            return;
           }
         }}
       >

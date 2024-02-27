@@ -71,7 +71,7 @@ export default function Header() {
       >
         <Image
           priority={true}
-          quality={"100"}
+          quality={"85"}
           width={"80"}
           height={"80"}
           src="/Aimg.png"

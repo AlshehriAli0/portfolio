@@ -68,7 +68,7 @@ export default function Project({
         <Image
           src={imageUrl}
           alt={title}
-          quality={100}
+          quality={90}
           className="hidden sm:block absolute border border-black/15 top-8 -right-[23.5rem] w-[56.25rem] rounded-t-md shadow-2xl shadow-black group-even:right[initial] group-even:-left-[23.5rem] transition group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-[1.04] group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 "
         />
       </section>

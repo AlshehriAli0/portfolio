@@ -1,4 +1,6 @@
-import React from 'react'
+"use server";
+
+import React from "react";
 
 export default function AboutPc() {
   return (

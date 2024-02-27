@@ -8,6 +8,7 @@ import { FaPaperPlane } from "react-icons/fa6";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/send-email";
 import toast from "react-hot-toast";
+import Link from "next/link";
 
 export default function Contact() {
   const { ref } = useSectionInView({
@@ -29,10 +30,10 @@ export default function Contact() {
 
       <p className="text-slate-700 -mt-6">
         Contact me directly at{" "}
-        <a className="underline" href="mailto:Ali0fawzish@outlook.com">
+        <Link className="underline" href="mailto:Ali0fawzish@outlook.com">
           {" "}
           Ali0fawzish@outlook.com
-        </a>{" "}
+        </Link>{" "}
         or through this form
       </p>
 

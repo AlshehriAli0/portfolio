@@ -40,6 +40,7 @@ export default function Project({
       <section className=" bg-slate-100 rounded-md max-w-[42rem] relative border border-black/5 overflow-hidden sm:pr-8 sm:h-[19rem] mb-3 group-even:sm:pl-8 hover:bg-slate-200 transition dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-3 sm:pt-10 sm:max-w-[55%] flex flex-col h-full group-even:sm:ml-[18rem] ">
           <Link
+            prefetch={false}
             href={url}
             target="_blank"
             rel="noopener noreferrer"

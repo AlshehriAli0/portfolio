@@ -28,7 +28,17 @@ export default function Projects() {
           </React.Fragment>
         ))}
       </div>
-      <p className="text-xs text-slate-500 text-center mt-6">More projects can be found on my github profile: <Link rel="github account" className="underline font-semibold" href={"https://github.com/AlshehriAli0"}>AlshehriAli0</Link></p>
+      <p className="text-xs text-slate-500 text-center mt-6">
+        More projects can be found on my github profile:{" "}
+        <Link
+          prefetch={false}
+          rel="github account"
+          className="underline font-semibold"
+          href={"https://github.com/AlshehriAli0"}
+        >
+          AlshehriAli0
+        </Link>
+      </p>
     </section>
   );
 }

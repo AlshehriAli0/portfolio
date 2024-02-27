@@ -58,6 +58,7 @@ export default function Intro() {
             transition={{ delay: 0.1 }}
           >
             <Link
+              prefetch={false}
               rel="NavLinkContact"
               href="#contact"
               className="group bg-slate-900 w-60  justify-center text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-slate-950 active:scale-100 transition"
@@ -70,32 +71,35 @@ export default function Intro() {
               <BsArrowRight className="opacity-70 group-hover:translate-x-5 transition" />
             </Link>
 
-            <a
+            <Link
+              prefetch={false}
               className="group bg-white w-50 justify-center px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer border border-black/10 dark:bg-white/10"
               href="/cv.pdf"
               download
             >
               Download Resume{" "}
               <HiDownload className="opacity-70 group-hover:translate-y-1  transition" />
-            </a>
+            </Link>
             <div className="flex gap-4 p-x-1">
-              <a
+              <Link
+                prefetch={false}
                 className="bg-white p-4 text-slate-700 dark:text-white/90 dark:bg-white/10 px-[1.1405rem] rounded-full flex items-center gap-2  focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
                 href="https://www.linkedin.com/in/ali-alshehri-340b26284"
                 target="_blank"
                 rel="Linkedin"
               >
                 <BsLinkedin />
-              </a>
+              </Link>
 
-              <a
+              <Link
+                prefetch={false}
                 className="bg-white p-4 text-slate-700 dark:text-white/90 flex dark:bg-white/10 items-center gap-2 rounded-full text-[1.35rem] focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
                 href="https://github.com/AlshehriAli0"
                 target="_blank"
                 rel="Github"
               >
                 <FaGithubSquare />
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

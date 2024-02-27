@@ -30,6 +30,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
             >
               <Link
+                prefetch={false}
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition  -mt-[0.2rem] dark:text-slate-600 dark:hover:text-slate-300",
                   {

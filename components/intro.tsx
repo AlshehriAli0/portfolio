@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, m } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -25,7 +25,7 @@ export default function Intro() {
     >
       <div className="flex items-center justify-center ">
         <div>
-          <motion.h1
+          <m.h1
             className="mb-12 px-4 mt-2 sm:-mt-4 text-3xl font-medium !leading-[1.6] sm:text-4xl motion-safe"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -49,9 +49,9 @@ export default function Intro() {
                 words={["JavaScript", "Python", "TypeScript", "C++"]}
               />
             )}
-          </motion.h1>
+          </m.h1>
 
-          <motion.div
+          <m.div
             className="flex flex-col sm:flex-row justify-center items-center gap-3 px-4 text-lg font-medium motion-safe"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ export default function Intro() {
                 <FaGithubSquare />
               </Link>
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>

@@ -1,5 +1,8 @@
+"use client";
+
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { LazyMotion, domAnimation } from "framer-motion";
 
 import Header from "@/components/header";
 import ActiveSecContextProvider from "@/context/active-sec-context";
@@ -22,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <link rel="icon" href="/Aimg-white.png"/>
+      <link rel="icon" href="/Aimg-white.png" />
       <body
         className={`${inter.className} bg-slate-50 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-950 dark:text-slate-50 dark:text-opacity-90 transition-all`}
       >
@@ -45,10 +48,12 @@ export default function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSecContextProvider>
-            <Header />
-            {children}
-            <Theme />
-            <Toaster position="top-right" />
+            <LazyMotion features={domAnimation}>
+              <Header />
+              {children}
+              <Theme />
+              <Toaster position="top-right" />
+            </LazyMotion>
           </ActiveSecContextProvider>
         </ThemeContextProvider>
       </body>

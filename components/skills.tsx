@@ -36,7 +36,7 @@ import { LuFileJson } from "react-icons/lu";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
+import { motion, m } from "framer-motion";
 
 const skillIcons: any = {
   HTML: <FaHtml5 />,
@@ -91,7 +91,7 @@ export default function Skills() {
       <SectionHeading>Tools & Skills</SectionHeading>
       <ul className="flex flex-wrap justify-center items-center gap-2 text-lg text-slate-800 ">
         {skillsData.map((skill: string, index: number) => (
-          <motion.li
+          <m.li
             className="bg-white dark:bg-white/15 dark:text-white/90 flex items-center border border-black/10 rounded-xl px-5 py-3 transition-all motion-safe"
             key={index}
             variants={fadeInVarient}
@@ -105,7 +105,7 @@ export default function Skills() {
               <span className="mr-2 text-xl">{skillIcons[skill]}</span>
             ) : null}
             {skill}
-          </motion.li>
+          </m.li>
         ))}
       </ul>
     </section>

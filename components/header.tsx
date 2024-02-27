@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useContext } from "react";
+import React from "react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -30,6 +30,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
             >
               <Link
+              rel="NavLink"
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-slate-950 transition  -mt-[0.2rem] dark:text-slate-600 dark:hover:text-slate-300",
                   {
@@ -71,7 +72,6 @@ export default function Header() {
       >
         <Image
           priority={true}
-          quality={"85"}
           width={"80"}
           height={"80"}
           src="/Aimg.png"

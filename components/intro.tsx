@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useMediaQuery } from "react-responsive";
 
 import { useSectionInView } from "@/lib/hooks";
 import ScrambleText from "./scramble-text";
@@ -15,15 +15,11 @@ import { useActiveSecContext } from "@/context/active-sec-context";
 export default function Intro() {
   const { setActiveSec, setLastClick } = useActiveSecContext();
   const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.4 });
-  const words: string[] = [
-    "JavaScript",
-    "Python",
-    "TypeScript",
-    "C++",
-  ] as const;
+  const isSmallScreen = useMediaQuery({ maxWidth: 640 }); 
+
   return (
     <section
-      className=" sm:mt-10 max-w-[50rem] text-center scroll-mt-[100rem]"
+      className="sm:mt-10 max-w-[50rem] text-center scroll-mt-[100rem]"
       id="home"
       ref={ref}
     >
@@ -40,11 +36,19 @@ export default function Intro() {
             <span className="font-bold">Back-End Development</span> with a
             strong focus on
             <span className="font-bold"> AI and ML</span>. Skilled with{" "}
-            <span className="font-bold sm:block hidden">
-              <ScrambleText words={words} />
-            </span>
-           <span className="sm:hidden block"> <span className="font-bold"> JavaScript, Python, TypeScript</span>{" "}
-            and <span className="font-bold">C++</span> </span>
+            {isSmallScreen ? (
+              <>
+                <span className="font-bold">
+                  {" "}
+                  JavaScript, Python, TypeScript
+                </span>{" "}
+                and <span className="font-bold">C++</span>
+              </>
+            ) : (
+              <ScrambleText
+                words={["JavaScript", "Python", "TypeScript", "C++"]}
+              />
+            )}
           </motion.h1>
 
           <motion.div
@@ -54,6 +58,7 @@ export default function Intro() {
             transition={{ delay: 0.1 }}
           >
             <Link
+              rel="NavLinkContact"
               href="#contact"
               className="group bg-slate-900 w-60  justify-center text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-slate-950 active:scale-100 transition"
               onClick={() => {
@@ -78,7 +83,7 @@ export default function Intro() {
                 className="bg-white p-4 text-slate-700 dark:text-white/90 dark:bg-white/10 px-[1.1405rem] rounded-full flex items-center gap-2  focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
                 href="https://www.linkedin.com/in/ali-alshehri-340b26284"
                 target="_blank"
-                rel="noreferrer"
+                rel="Linkedin"
               >
                 <BsLinkedin />
               </a>
@@ -87,7 +92,7 @@ export default function Intro() {
                 className="bg-white p-4 text-slate-700 dark:text-white/90 flex dark:bg-white/10 items-center gap-2 rounded-full text-[1.35rem] focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
                 href="https://github.com/AlshehriAli0"
                 target="_blank"
-                rel="noreferrer"
+                rel="Github"
               >
                 <FaGithubSquare />
               </a>

@@ -66,6 +66,7 @@ export default function Contact() {
           className="h-52 p-4 my-3 dark:bg-slate-900 focus:outline-none focus:ring-[1.7px] focus:ring-black rounded-lg border dark:focus:ring-white/20 border-black/10 transition-all"
         ></textarea>
         <button
+          rel="NavLinkContactSubmit"
           className="group flex items-center hover:bg-slate-950 dark:hover:bg-slate-700 hover:scale-105 justify-center gap-2 h-[3rem] w-[8rem] bg-slate-900 rounded-2xl text-white hover:font-bold outline-none transition-all active:scale-100"
           type="submit"
         >

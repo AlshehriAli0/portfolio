@@ -1,4 +1,3 @@
-" use server";
 
 import React from "react";
 
@@ -9,7 +8,6 @@ import analasis from "@/public/tech-data.png";
 import todo from "@/public/todo.png";
 import premiumprops from "@/public/premium-props.png";
 import pyApp from "@/public/pyBAnk.png";
-import { url } from "inspector";
 
 export const links = [
   {

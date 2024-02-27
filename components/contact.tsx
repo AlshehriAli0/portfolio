@@ -44,11 +44,11 @@ export default function Contact() {
       <SectionHeading>Contact Me</SectionHeading>
 
       <div className="text-slate-700 -mt-6">
-        Contact me directly at
+        Contact me directly at 
         <Link className="underline" href="mailto:Ali0fawzish@outlook.com">
-          Ali0fawzish@outlook.com
+           Ali0fawzish@outlook.com 
         </Link>
-        or through this form
+         or through this form
       </div>
 
       <form

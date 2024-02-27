@@ -43,8 +43,8 @@ export default function Intro() {
             <span className="font-bold sm:block hidden">
               <ScrambleText words={words} />
             </span>
-            <span className="font-bold"> JavaScript, Python, TypeScript</span>{" "}
-            and <span className="font-bold">C++</span> 
+           <span className="sm:hidden block"> <span className="font-bold"> JavaScript, Python, TypeScript</span>{" "}
+            and <span className="font-bold">C++</span> </span>
           </motion.h1>
 
           <motion.div

@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
-import { useInView } from "react-intersection-observer";
 
 import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";

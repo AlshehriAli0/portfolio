@@ -40,11 +40,10 @@ export default function Intro() {
             <span className="font-bold">Back-End Development</span> with a
             strong focus on
             <span className="font-bold"> AI and ML</span>. Skilled with{" "}
-            <span className="font-bold sm:block hidden">
+            <span className="font-bold ">
               <ScrambleText words={words} />
             </span>
-           <span className="sm:hidden block"> <span className="font-bold"> JavaScript, Python, TypeScript</span>{" "}
-            and <span className="font-bold">C++</span> </span>
+           
           </motion.h1>
 
           <motion.div

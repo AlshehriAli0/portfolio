@@ -1,5 +1,4 @@
-" use server";
-
+"use client";
 import { useEffect } from "react";
 
 import { useActiveSecContext } from "@/context/active-sec-context";

@@ -24,8 +24,8 @@ export async function sendEmail(formData: FormData) {
 
   try {
     await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "ali0fawzish@outlook.com",
+      from: "Ali's Portfolio Contact Form <onboarding@resend.dev>",
+      to: "ali0fawzi@gmail.com",
       subject: "Message from contact form",
       reply_to: sender as string,
       text: message as string,
@@ -38,6 +38,8 @@ export async function sendEmail(formData: FormData) {
       data : false,
     };
   }
+
+  
 
   return { data };
 }

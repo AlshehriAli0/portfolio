@@ -43,12 +43,16 @@ export default function Contact() {
     >
       <SectionHeading>Contact Me</SectionHeading>
 
-      <div className="text-slate-700 -mt-6">
-        Contact me directly at 
-        <Link className="underline" href="mailto:Ali0fawzish@outlook.com">
-           Ali0fawzish@outlook.com 
+      <div className="text-slate-700 -mt-6 ">
+        Contact me directly at <span></span>
+        <Link
+          className="underline dark:hover:text-slate-500 transition hover:text-slate-800"
+          href="mailto:Ali0fawzish@outlook.com"
+        >
+          Ali0fawzish@outlook.com
         </Link>
-         or through this form
+        <span> </span>
+        or through this form
       </div>
 
       <form

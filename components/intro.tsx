@@ -3,7 +3,6 @@
 import React from "react";
 import ScrambleText from "./scramble-text";
 import { motion } from "framer-motion";
-
 import { useSectionInView } from "@/lib/hooks";
 import IntroButtons from "./intro-buttons";
 

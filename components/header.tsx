@@ -2,9 +2,7 @@
 
 import React from "react";
 
-import Link from "next/link";
 import Image from "next/image";
-
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
@@ -21,7 +19,7 @@ export default function Header() {
         animate={{ y: 0, x: "-50%", opacity: 1 }}
         transition={{ delay: 1.5 }}
       ></motion.div>
-      
+
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:[h-initial] sm:py-0 sm:mt-0 mt-[3px]">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-slate-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 ">
           {links.map((link) => (
@@ -49,7 +47,6 @@ export default function Header() {
                 {link.name}
                 {link.name === activeSec && (
                   <motion.span
-                  
                     className=" bg-slate-200/60 inset-0 -z-10 rounded-2xl absolute -mt-[0.2rem] dark:bg-slate-800"
                     layoutId="activeSec"
                     transition={{

@@ -47,7 +47,7 @@ export default function Header() {
                 {link.name}
                 {link.name === activeSec && (
                   <motion.span
-                    className=" bg-slate-200/60 inset-0 -z-10 rounded-2xl absolute -mt-[0.2rem] dark:bg-slate-800"
+                    className=" bg-slate-200/60 inset-0 -z-10 rounded-2xl absolute -mt-[0.2rem] dark:bg-slate-800 transition-colors"
                     layoutId="activeSec"
                     transition={{
                       type: "spring",

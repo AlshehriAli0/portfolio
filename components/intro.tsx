@@ -11,7 +11,7 @@ export default function Intro() {
 
   return (
     <section
-      className="sm:mt-10 max-w-[50rem] text-center scroll-mt-[100rem] bg-transparent  "
+      className="sm:mt-10 mt-2 max-w-[50rem] text-center scroll-mt-[100rem] bg-transparent  "
       id="home"
       ref={ref}
     >
@@ -23,22 +23,17 @@ export default function Intro() {
           transition={{ delay: 2, duration: 0.4, type: "spring"}}
         >
           <span className="font-bold">Hello, I&apos;m Ali.</span> A
-          <span className="font-bold"> Full-Stack Dev</span>, specializing
-          in
-          <span className="font-bold"> Back-End Development</span> with 
+          <span className="font-bold"> Full-Stack Dev</span>, excelling
+          in 
+          <span className="font-bold"> Back-End</span> with 
           focus on
-          <span className="font-bold"> AI and ML</span>. Competent with <span></span>
+          <span className="font-bold"> AI and ML</span>. Core stack consisting of  <span className=""></span>
           <span className="font-bold dark:text-white text-black"> 
             <ScrambleText
               words={[
                 "JavaScript",
                 "Python",
                 "TypeScript",
-                "C++",
-                "SQL",
-                "NoSQL",
-                "Docker",
-                "AWS",
                 "Node.js",
                 "Express.js",
                 "React.js",
@@ -46,10 +41,8 @@ export default function Intro() {
                 "MongoDb",
                 "PostgreSQL",
                 "Flask",
-                "Pandas",
-                "Numpy",
-                "Matplotlib",
-                "Postman",
+                "Vercel",
+                "FastAPI"
               ]}
             />
           </span>

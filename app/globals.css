@@ -46,7 +46,7 @@ html {
 }
 
 .dark .bottom-left {
-    background-color: rgba(101, 33, 33, 0.43);
+visibility: hidden;
 }
 
 .bottom-right {
@@ -69,7 +69,8 @@ html {
 }
 
 .dark .bottom-right {
-    background-color: rgba(33, 101, 101, 0.55);
+    visibility: hidden;
+
 }
 
 .top-left {
@@ -111,7 +112,7 @@ html {
 }
 
 .dark .top-left {
-    background-color: rgba(103, 99, 148, 0.58);
+visibility: hidden;
 }
 
 .top-right {
@@ -134,5 +135,5 @@ html {
 }
 
 .dark .top-right {
-    background-color: rgba(177, 90, 91, 0.625);
+    visibility: hidden;
 }

@@ -4,11 +4,9 @@ import { Inter } from "next/font/google";
 import ActiveSecContextProvider from "@/context/active-sec-context";
 import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "@/context/theme-context";
-import dynamic from "next/dynamic";
 import Header from "@/components/header";
 import Theme from "@/components/theme";
-
-
+import Background from "@/components/background";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,13 +32,13 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-slate-50 text-slate-950 relative pt-28 sm:pt-36 dark:bg-slate-950 dark:text-slate-50 dark:text-opacity-90 transition-all `}
       >
-        
         <ThemeContextProvider>
           <ActiveSecContextProvider>
             <Header />
             <Theme />
             {children}
             <Toaster position="top-right" />
+            <Background />
           </ActiveSecContextProvider>
         </ThemeContextProvider>
       </body>

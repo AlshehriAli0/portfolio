@@ -63,12 +63,13 @@ export default function Header() {
       </nav>
       <motion.aside
         className="fixed top-0 left-0 rounded-full sm:backdrop-blur-md"
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{ x: -100 }}
+        animate={{ x: 0 }}
         transition={{
-          type: "tween",
-          duration: 0.2,
-          delay: 1.9,
+          type: "spring",
+          stiffness: 380,
+          damping: 30,
+          delay: 2.3,
         }}
       >
         <Image

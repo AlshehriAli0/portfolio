@@ -20,12 +20,12 @@ export default function Intro() {
           className="mb-12 px-4 mt-2 sm:-mt-4 text-3xl font-medium !leading-[1.6] sm:text-4xl bg-transparent"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2 }}
+          transition={{ delay: 2, duration: 0.4, type: "spring"}}
         >
-          <span className="font-bold">Hello, I&apos;m Ali Alshehri.</span> A
+          <span className="font-bold">Hello, I&apos;m Ali.</span> A
           <span className="font-bold"> Full-Stack Dev</span>, specializing
           in
-          <span className="font-bold"> Back-End Development</span> with a strong
+          <span className="font-bold"> Back-End Development</span> with 
           focus on
           <span className="font-bold"> AI and ML</span>. Competent with <span></span>
           <span className="font-bold dark:text-white text-black"> 

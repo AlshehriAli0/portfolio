@@ -25,19 +25,20 @@ export default function Intro() {
           <article className="flex flex-col">
             <div>
               <span className="font-bold">Hello, I&apos;m Ali.</span> A
-              <span className="font-bold"> Full-Stack Developer</span>, excelling in
+              <span className="font-bold"> Full-Stack Developer</span>,
+              excelling in
               <span className="font-bold"> Back-End</span> with focus on
               <span className="font-bold"> AI and ML</span>. Core stack
-              consisting of 
+              consisting of
             </div>
             <div className="font-bold dark:text-white text-black">
               <ScrambleText
                 words={[
-                  "Flask",
                   "JavaScript",
                   "Python",
                   "TypeScript",
                   "Node.js",
+                  "Flask",
                   "Express.js",
                   "React.js",
                   "Next.js",

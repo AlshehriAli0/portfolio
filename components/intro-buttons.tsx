@@ -49,6 +49,7 @@ export default function IntroButtons() {
           className="bg-white p-4 text-slate-700 dark:text-white/90 dark:bg-white/10 px-[1.1405rem] rounded-full flex items-center gap-2  focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:hover:bg-white/[0.17]"
           href="https://www.linkedin.com/in/ali-alshehri-340b26284"
           target="_blank"
+          aria-label="linkedin"
           rel="noopener noreferrer"
         >
           <BsLinkedin />
@@ -57,6 +58,7 @@ export default function IntroButtons() {
         <Link
           prefetch={false}
           className="bg-white p-4 text-slate-700 dark:text-white/90 flex dark:bg-white/10 items-center gap-2 rounded-full text-[1.35rem] focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:hover:bg-white/[0.17]"
+          aria-label="Github"
           href="https://github.com/AlshehriAli0"
           target="_blank"
           rel="noopener noreferrer"

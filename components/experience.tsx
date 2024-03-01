@@ -8,10 +8,12 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { experiencesData } from "@/lib/data";
 import { useThemeContext } from '@/context/theme-context';
+import dynamic from "next/dynamic";
+
+const SectionHeading = dynamic(() => import("@/components/section-heading"));
 
 export default function Experience() {
   const { ref } = useSectionInView({

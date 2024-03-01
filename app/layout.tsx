@@ -2,11 +2,13 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 import ActiveSecContextProvider from "@/context/active-sec-context";
-import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "@/context/theme-context";
 import Header from "@/components/header";
-import Theme from "@/components/theme";
-import Background from "@/components/background";
+import dynamic from "next/dynamic";
+import { Toaster } from "react-hot-toast";
+
+const Theme = dynamic(() => import("@/components/theme"));
+const Background = dynamic(() => import("@/components/background"));
 
 const inter = Inter({ subsets: ["latin"] });
 

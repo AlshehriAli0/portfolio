@@ -34,11 +34,10 @@ import { TbBrandCpp, TbBrandFramerMotion } from "react-icons/tb";
 
 import { LuFileJson } from "react-icons/lu";
 
-import SectionHeading from "./section-heading";
+import SectionHeading from './section-heading';
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import {motion } from 'framer-motion';
-
 
 
 const skillIcons: any = {
@@ -96,7 +95,7 @@ export default function Skills() {
       <ul className="flex flex-wrap justify-center items-center gap-2 text-lg text-slate-800 ">
         {skillsData.map((skill: string, index: number) => (
           <motion.li
-            className="bg-white dark:bg-white/15 dark:text-white/90 flex items-center border border-black/10 rounded-xl px-5 py-3 transition-all "
+            className="bg-white dark:bg-white/15 dark:text-white/90 flex items-center border border-black/10 rounded-xl px-5 py-3 transition-colors "
             key={index}
             variants={fadeInVarient}
             initial="initial"

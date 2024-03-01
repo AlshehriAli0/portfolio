@@ -2,11 +2,15 @@
 
 import React, { useRef } from "react";
 
-import SectionHeading from "./section-heading";
-import AboutMobile from "./about-mobile";
-import AboutPc from "./about-pc";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import dynamic from "next/dynamic";
+
+
+const AboutPc = dynamic(() => import("@/components/about-pc"));
+const AboutMobile = dynamic(() => import("@/components/about-mobile"));
+const SectionHeading = dynamic(() => import("@/components/section-heading")); 
+
 
 export default function About() {
   const { ref } = useSectionInView({ sectionName: "About", threshold: 0.4 });

@@ -2,15 +2,16 @@
 
 import React from "react";
 
-
-import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
-import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const SectionHeading = dynamic(() => import("@/components/section-heading"));
+const Project = dynamic(() => import("@/components/project"));
 
 export default function Projects() {
-  const { ref } = useSectionInView({ sectionName: "Projects", threshold: 0.2} );
+  const { ref } = useSectionInView({ sectionName: "Projects", threshold: 0.2 });
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-36">
@@ -29,7 +30,7 @@ export default function Projects() {
         ))}
       </div>
       <div className="text-xs text-slate-600 text-center mt-6">
-        More projects can be found on my github profile:  <span></span>
+        More projects can be found on my github profile: <span></span>
         <Link
           prefetch={false}
           rel="github account"
@@ -37,7 +38,6 @@ export default function Projects() {
           href={"https://github.com/AlshehriAli0"}
           target="_blank"
         >
-        
           AlshehriAli0
         </Link>
       </div>

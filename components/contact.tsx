@@ -47,9 +47,9 @@ export default function Contact() {
         Contact me directly at <span></span>
         <Link
           className="underline dark:hover:text-slate-500 transition hover:text-slate-800"
-          href="mailto:Ali0fawzish@outlook.com"
+          href="mailto:Ali0Alshehri@outlook.com"
         >
-          Ali0fawzish@outlook.com
+          Ali0Alshehri@outlook.com
         </Link>
         <span> </span>
         or through this form

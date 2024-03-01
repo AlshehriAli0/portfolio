@@ -1,5 +1,6 @@
 import Intro from "@/components/intro";
-
+import Divider from "@/components/divider";
+import About from "@/components/about";
 import dynamic from "next/dynamic";
 
 const Projects = dynamic(() => import("@/components/projects"));
@@ -7,8 +8,6 @@ const Skills = dynamic(() => import("@/components/skills"));
 const Experience = dynamic(() => import("@/components/experience"));
 const Contact = dynamic(() => import("@/components/contact"));
 const Footer = dynamic(() => import("@/components/footer"));
-const Divider = dynamic(() => import("@/components/divider"));
-const About = dynamic(() => import("@/components/about"));
 
 export default function Home() {
   return (

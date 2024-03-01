@@ -4,12 +4,12 @@ import React, { useRef } from "react";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import dynamic from "next/dynamic";
+import SectionHeading from "./section-heading";
+import AboutMobile from "./about-mobile";
+import AboutPc from "./about-pc";
 
 
-const AboutPc = dynamic(() => import("@/components/about-pc"));
-const AboutMobile = dynamic(() => import("@/components/about-mobile"));
-const SectionHeading = dynamic(() => import("@/components/section-heading")); 
+
 
 
 export default function About() {

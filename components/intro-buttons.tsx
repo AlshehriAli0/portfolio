@@ -23,7 +23,7 @@ export default function IntroButtons() {
         prefetch={false}
         rel="NavLinkContact"
         href="#contact"
-        className="group bg-slate-900 w-60  justify-center text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-slate-950 active:scale-100 transition"
+        className="group bg-slate-900 w-60  justify-center text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-slate-950 dark:hover:bg-slate-800 active:scale-100 transition"
         onClick={() => {
           setActiveSec("Contact");
           setLastClick(Date.now());

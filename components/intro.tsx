@@ -6,7 +6,6 @@ import { useSectionInView } from "@/lib/hooks";
 import IntroButtons from "./intro-buttons";
 import ScrambleText from "./scramble-text";
 
-
 export default function Intro() {
   const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.4 });
 
@@ -26,10 +25,10 @@ export default function Intro() {
           <article className="flex flex-col">
             <div>
               <span className="font-bold">Hello, I&apos;m Ali.</span> A
-              <span className="font-bold"> Full-Stack Dev</span>, excelling in
+              <span className="font-bold"> Full-Stack Developer</span>, excelling in
               <span className="font-bold"> Back-End</span> with focus on
               <span className="font-bold"> AI and ML</span>. Core stack
-              consisting of <span className=""></span>
+              consisting of 
             </div>
             <div className="font-bold dark:text-white text-black">
               <ScrambleText
@@ -50,9 +49,9 @@ export default function Intro() {
               />
             </div>
           </article>
-          <IntroButtons />
         </motion.h1>
       </div>
+      <IntroButtons />
     </section>
   );
 }

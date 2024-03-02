@@ -25,10 +25,10 @@ export default function Home() {
       <Divider />
       <Contact />
       <Footer />
-      <div className="bottom-right hidden sm:block"></div>
-      <div className="top-left hidden sm:block"></div>
-      <div className="bottom-left hidden sm:block"></div>
-      <div className="top-right hidden sm:block"></div>
+      <div className="bottom-right hidden lg:block"></div>
+      <div className="top-left hidden lg:block"></div>
+      <div className="bottom-left hidden lg:block"></div>
+      <div className="top-right hidden lg:block"></div>
     </main>
   );
 }

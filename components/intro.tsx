@@ -11,13 +11,13 @@ export default function Intro() {
 
   return (
     <section
-      className="sm:mt-10 mt-2 max-w-[50rem] text-center scroll-mt-[100rem] bg-transparent  "
+      className="sm:mt-10 mt-8 max-w-[50rem] text-center scroll-mt-[100rem] bg-transparent "
       id="home"
       ref={ref}
     >
-      <div className="flex items-center justify-center dark:text-slate-200 text-slate-900 ">
+      <div className="flex items-center justify-center dark:text-slate-200 text-slate-900">
         <motion.h1
-          className="mb-12 px-4 mt-2 sm:-mt-4 text-3xl font-medium !leading-[1.6] sm:text-4xl bg-transparent"
+          className="sm:mb-12 mb-10 -mt-6 px-4 sm:-mt-4 text-[1.75rem] font-medium !leading-[1.6] sm:text-4xl bg-transparent"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.4, type: "spring" }}

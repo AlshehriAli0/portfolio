@@ -14,7 +14,7 @@ export default function IntroButtons() {
 
   return (
     <motion.div
-      className="flex flex-col sm:flex-row justify-center items-center gap-3 px-4 text-lg font-medium mt-10"
+      className="flex flex-col sm:flex-row justify-center items-center gap-3 px-4 text-lg font-medium sm:mt-10"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.3 }}

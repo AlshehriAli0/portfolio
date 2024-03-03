@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AboutPc() {
   return (
-    <div className="mb-3">
+    <div className="mb-3 text-[1.075rem]">
       Currently pursuing a bachelors degree in
       <span className="font-medium"> Computer Science</span> at Imam Abdulrahman
       Bin Faisal University, my passion for software engineering drives me to

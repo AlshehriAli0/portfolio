@@ -11,7 +11,7 @@ import {
   FaGit,
   FaSass,
   FaPython,
-  FaAws
+  FaAws,
 } from "react-icons/fa";
 
 import {
@@ -30,15 +30,14 @@ import {
   SiMongodb,
 } from "react-icons/si";
 
-import { TbBrandCpp, TbBrandFramerMotion } from "react-icons/tb";
+import { TbBrandCpp, TbBrandFramerMotion, TbBrandPrisma } from "react-icons/tb";
 
 import { LuFileJson } from "react-icons/lu";
 
-import SectionHeading from './section-heading';
+import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import {motion } from 'framer-motion';
-
+import { motion } from "framer-motion";
 
 const skillIcons: any = {
   HTML: <FaHtml5 />,
@@ -65,7 +64,8 @@ const skillIcons: any = {
   PostgreSQL: <SiPostgresql />,
   Django: <SiDjango />,
   "Framer Motion": <TbBrandFramerMotion />,
-  "AWS":<FaAws/>
+  AWS: <FaAws />,
+  Prisma: <TbBrandPrisma />,
 };
 
 const fadeInVarient = {
@@ -103,7 +103,6 @@ export default function Skills() {
             viewport={{ once: true }}
             custom={index}
           >
-       
             {skillIcons[skill] ? (
               <span className="mr-2 text-xl">{skillIcons[skill]}</span>
             ) : null}

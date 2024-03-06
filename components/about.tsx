@@ -48,10 +48,10 @@ export default function About() {
         ref={refArticle}
         style={{ opacity: opacityProg, x: xProg }}
       >
-        <span className="sm:hidden text-white block glass-bg rounded-lg p-4 transition-all">
+        <span className="sm:hidden dark:text-white block glass-bg rounded-lg p-4 transition-all">
           <AboutMobile />
         </span>
-        <span className="hidden text-white sm:block glass-bg rounded-lg p-4 transition-all">
+        <span className="hidden dark:text-white sm:block glass-bg rounded-lg p-4 transition-all">
           <AboutPc></AboutPc>
         </span>
       </motion.article>

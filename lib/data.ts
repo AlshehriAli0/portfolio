@@ -118,4 +118,5 @@ export const skillsData = [
   "Django",
   "Framer Motion",
   "AWS",
+  "Prisma"
 ] as const;

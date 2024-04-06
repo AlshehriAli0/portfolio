@@ -1,0 +1,31 @@
+# 🌟 Personal Portfolio Website 🌟
+
+This is a personal portfolio website built using React & Next.js v13.4.8, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, and deployed through Vercel.
+
+## Features
+
+- Responsive design
+- Animated transitions using Framer Motion
+- Contact form with email integration
+- Deployed with Vercel for easy hosting and continuous deployment
+
+## Technologies Used
+
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- React Email & Resend
+- Vercel
+
+## Visit the website
+
+You can find it at: https://alialshehri.works/
+
+
+## License
+
+🚫 **All Rights Reserved. No Changes Allowed.** 🚫
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

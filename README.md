@@ -22,10 +22,3 @@ This is a personal portfolio website built using React & Next.js v13.4.8, TypeSc
 ## Visit the website
 
 You can find it at: https://alialshehri.works/
-
-
-## License
-
-🚫 **All Rights Reserved. No Changes Allowed.** 🚫
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

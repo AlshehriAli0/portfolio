@@ -1,6 +1,6 @@
 # 🌟 Personal Portfolio Website 🌟
 
-This is a personal portfolio website built using React & Next.js v13.4.8, TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, and deployed through Vercel.
+This is a personal portfolio website built using React & Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, and deployed through Vercel.
 
 ## Features
 

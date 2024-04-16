@@ -36,7 +36,7 @@ export default function IntroButtons() {
       <Link
         prefetch={false}
         className="group bg-white w-50 justify-center px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer border border-black/10 dark:bg-white/10 dark:hover:bg-white/[0.17]"
-        href="/Resume_Ali_Alshehri.pdf"
+        href="https://utfs.io/f/844c5473-2a8d-4a72-b807-640dbab11360-7jsb4d.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >

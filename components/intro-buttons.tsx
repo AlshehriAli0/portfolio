@@ -47,7 +47,7 @@ export default function IntroButtons() {
         <Link
           prefetch={false}
           className="bg-white p-4 text-slate-700 dark:text-white/90 dark:bg-white/10 px-[1.1405rem] rounded-full flex items-center gap-2  focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10 dark:hover:bg-white/[0.17]"
-          href="https://www.linkedin.com/in/ali-alshehri-340b26284"
+          href="https://utfs.io/f/9b1c3bc3-b147-4312-bf40-148648770dbf-7jsb4d.pdf"
           target="_blank"
           aria-label="linkedin"
           rel="noopener noreferrer"

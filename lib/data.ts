@@ -92,7 +92,7 @@ export const projectsData = [
     url: "https://github.com/AlshehriAli0/Python-Banking-App",
   },
   {
-    title: "Employee Management System",
+    title: "C++ Management System",
     description:
     "A lightning fast CLI app built for managing employees with many features. Utilizing C++ and PostgreSQL for efficient data storage and retrieval.",
     tags: ["C++", "PostgreSQL", "CLI"],

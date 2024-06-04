@@ -21,7 +21,7 @@ export default function Intro() {
           className="sm:mb-12 mb-10 -mt-6 px-4 sm:-mt-4 text-[1.75rem] font-medium !leading-[1.6] sm:text-4xl bg-transparent"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, type: "spring" }}
+          transition={{ duration: 0.4, type: "spring", delay: 0.5 }}
         >
           <article className="flex flex-col">
             <div>

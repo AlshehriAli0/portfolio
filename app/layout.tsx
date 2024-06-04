@@ -5,11 +5,12 @@ import ActiveSecContextProvider from "@/context/active-sec-context";
 import ThemeContextProvider from "@/context/theme-context";
 import Header from "@/components/header";
 import { Toaster } from "react-hot-toast";
-import Background from "@/components/background";
 import Theme from "@/components/theme";
+import React from "react";
 
 export const dynamic ="force-static";
 
+const Background = React.lazy(() => import("@/components/background"));
 const raleway = Raleway({
   subsets: ["latin"],
 });

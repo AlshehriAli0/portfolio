@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 import Background from "@/components/background";
 import Theme from "@/components/theme";
 
-
+export const dynamic ="force-static";
 
 const raleway = Raleway({
   subsets: ["latin"],

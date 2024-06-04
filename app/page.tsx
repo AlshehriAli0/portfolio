@@ -1,13 +1,15 @@
 import Intro from "@/components/intro";
 import Divider from "@/components/divider";
-import dynamic from "next/dynamic";
+import d from "next/dynamic";
 
-const Projects = dynamic(() => import("@/components/projects"));
-const Skills = dynamic(() => import("@/components/skills"));
-const Experience = dynamic(() => import("@/components/experience"));
-const Contact = dynamic(() => import("@/components/contact"));
-const Footer = dynamic(() => import("@/components/footer"));
-const About = dynamic(() => import("@/components/about"));
+const Projects = d(() => import("@/components/projects"));
+const Skills = d(() => import("@/components/skills"));
+const Experience = d(() => import("@/components/experience"));
+const Contact = d(() => import("@/components/contact"));
+const Footer = d(() => import("@/components/footer"));
+const About = d(() => import("@/components/about"));
+
+export const dynamic = "force-static";
 
 export default function Home() {
   return (

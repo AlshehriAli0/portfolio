@@ -6,7 +6,9 @@ import { projectsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import SectionHeading from "./section-heading";
-import Project from "./project";
+import dynamic from "next/dynamic";
+
+const Project = dynamic(() => import("./project"));
 
 export default function Projects() {
   const { ref } = useSectionInView({ sectionName: "Projects", threshold: 0.2 });

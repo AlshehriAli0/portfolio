@@ -5,9 +5,11 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "./section-heading";
-import AboutMobile from "./about-mobile";
-import AboutPc from "./about-pc";
+import dynamic from "next/dynamic";
 
+
+const AboutMobile = dynamic(() => import("./about-mobile"));
+const AboutPc = dynamic(() => import("./about-pc"));
 
 
 

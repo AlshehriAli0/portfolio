@@ -8,6 +8,7 @@ import analasis from "@/public/tech-data.png";
 import todo from "@/public/todo.png";
 import premiumprops from "@/public/premium-props.png";
 import pyApp from "@/public/pyBAnk.png";
+import emp from "@/public/emp.png";
 
 export const links = [
   {
@@ -90,6 +91,14 @@ export const projectsData = [
     imageUrl: pyApp,
     url: "https://github.com/AlshehriAli0/Python-Banking-App",
   },
+  {
+    title: "Employee Management System",
+    description:
+    "A lightning fast CLI app built for managing employees with many features. Utilizing C++ and PostgreSQL for efficient data storage and retrieval.",
+    tags: ["C++", "PostgreSQL", "CLI"],
+    imageUrl: emp,
+    url: "https://github.com/AlshehriAli0/employee-manegment-system",
+  }
 ] as const;
 
 export const skillsData = [

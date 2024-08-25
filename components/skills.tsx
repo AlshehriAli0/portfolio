@@ -12,6 +12,8 @@ import {
   FaSass,
   FaPython,
   FaAws,
+  FaJira,
+  FaJava,
 } from "react-icons/fa";
 
 import {
@@ -20,6 +22,7 @@ import {
   SiTailwindcss,
   SiExpress,
   SiPostgresql,
+  SiDrizzle,
   SiDjango,
   SiDocker,
   SiBootstrap,
@@ -28,6 +31,7 @@ import {
   SiJquery,
   SiPostman,
   SiMongodb,
+  SiLinear,
 } from "react-icons/si";
 
 import { TbBrandCpp, TbBrandFramerMotion, TbBrandPrisma } from "react-icons/tb";
@@ -66,6 +70,10 @@ const skillIcons: any = {
   "Framer Motion": <TbBrandFramerMotion />,
   AWS: <FaAws />,
   Prisma: <TbBrandPrisma />,
+  Jira: <FaJira />,
+  Java: <FaJava />,
+  Linear: <SiLinear />,
+  Drizzle: <SiDrizzle />,
 };
 
 const fadeInVarient = {

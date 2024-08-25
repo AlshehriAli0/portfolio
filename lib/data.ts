@@ -9,6 +9,7 @@ import todo from "@/public/todo.png";
 import premiumprops from "@/public/premium-props.png";
 import pyApp from "@/public/pyBAnk.png";
 import emp from "@/public/emp.png";
+import ufb from "@/public/ufb.png";
 
 export const links = [
   {
@@ -98,6 +99,12 @@ export const projectsData = [
     tags: ["C++", "PostgreSQL", "CLI"],
     imageUrl: emp,
     url: "https://github.com/AlshehriAli0/employee-manegment-system",
+  },{
+    title: "UFB Portfolio",
+    description: "An innovative freelance project website built with Next.js, React, Tailwind, and Framer Motion, featuring sleek animations and a modern responsive design.",
+    tags: ["React", "Next.js", "Tailwind", "Framer Motion"],
+    imageUrl: ufb,
+    url: "https://ufbsa.com",
   }
 ] as const;
 
@@ -127,5 +134,9 @@ export const skillsData = [
   "Django",
   "Framer Motion",
   "AWS",
-  "Prisma"
+  "Prisma",
+  "Jira",
+  "Java",
+  "Linear",
+  "Drizzle"
 ] as const;

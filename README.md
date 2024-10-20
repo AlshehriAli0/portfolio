@@ -1,6 +1,6 @@
-# 🌟 Personal Portfolio 🌟
+# 🌟 Old Personal Portfolio 🌟
 
-This is a personal portfolio website built using React & Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, and deployed through Vercel.
+This is my old personal portfolio website built using React & Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, and deployed through Vercel.
 
 ## Features 🚀
 
@@ -20,5 +20,6 @@ This is a personal portfolio website built using React & Next.js (App Router), T
 - Vercel
 
 ## Visit the website 🌐
+You can find it at: https://alis-portfolio.vercel.app/
 
-You can find it at: https://alialshehri.works/
+You can find the new portfolio at: https://alialshehri.works/
